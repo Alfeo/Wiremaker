@@ -1,0 +1,55 @@
+#header
+{
+	height:75px;
+	background-color:#333331;
+	padding-top:10px;
+}
+
+.button
+{
+	height:50px;
+	text-align:center;
+	border:solid #333331 5px;
+	border-radius:10px;
+	color:#FFFFFF;
+}
+
+#but1
+{
+	background-color:green;
+}
+
+#but2
+{
+	background-color:skyblue;
+}
+
+#but3
+{
+	background-color:orange;
+}
+
+#but4
+{
+	background-color:darkgrey;
+}
+
+#but5
+{
+	background-color:grey;
+}
+
+#but6
+{
+	background-color:yellow;
+}
+
+#but7
+{
+	background-color:red;
+}
+
+.item
+{
+	position:absolute;
+}
