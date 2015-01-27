@@ -1,16 +1,25 @@
 $(document).ready(function()
 {
-	var i = 1;
+	var i = 0;
 	
 	$("#but1").click(function()
 	{
+		i = i + 1;
 		var haut = prompt("Entrez la hauteur de votre bloc :");
 		var larg = prompt("Entrez la largeur de votre bloc :");
 		var color = prompt("Donnez lui une couleur ! :");
-		$("#sandbox").append("<div class=\"item\" id=\"bloc"+i+"\" style=\"height:"+haut+"px;width:"+larg+"px;background-color:"+color+";\">bloc"+i+"</div>");
-		i = i + 1;
+		$("#sandbox").append("<div class=\"item\" id=\"bloc"+i+"\" style=\"height:"+haut+"px;width:"+larg+"px;background-color:"+color+";\"><strong>bloc"+i+"</strong></div>");
 	});
-
+	
+	$("#but2").click(function()
+	{
+		i = i + 1;
+		var imghaut = prompt("Entrez la hauteur de votre image :");
+		var imglarg = prompt("Entrez la largeur de votre image :");
+		var imgurl = prompt("Entrez l'url de votre image :");
+		$("#sandbox").append("<div class=\"item\" id=\"bloc"+i+"\" style=\"height:"+imghaut+"px;width:"+imglarg+"px;\"><img class=\"import\" src=\""+imgurl+"\"><strong>bloc"+i+"</strong></div>");
+	});
+	
 	$("#but4").click(function()
 	{
 		var set = prompt("Entrez le numéro du bloc à modifier :");
@@ -44,17 +53,21 @@ $(document).ready(function()
 
 	function traitement(evenement)
 	{
-		if(evenement.which == 39)
+		if(evenement.which == 37)
 		{
+			$("#bloc"+i).animate({marginLeft:"-=50px"});
 		}
-		if(evenement.which == )
+		else if(evenement.which == 38)
 		{
+			$("#bloc"+i).animate({marginTop:"-=50px"});
 		}
-		if(evenement.which == )
+		else if(evenement.which == 39)
 		{
+			$("#bloc"+i).animate({marginLeft:"+=50px"});
 		}
-		if(evenement.which == )
+		else if(evenement.which == 40)
 		{
+			$("#bloc"+i).animate({marginTop:"+=50px"});
 		}
 	}
 	 
