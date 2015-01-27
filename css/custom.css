@@ -22,37 +22,42 @@
 
 #but1
 {
-	background-color:green;
+	background-color:#04B431;
 }
 
 #but2
 {
-	background-color:skyblue;
+	background-color:#2ECCFA;
 }
 
 #but3
 {
-	background-color:orange;
+	background-color:#FAAC58;
 }
 
 #but4
 {
-	background-color:darkgrey;
+	background-color:#848484;
 }
 
 #but5
 {
-	background-color:grey;
+	background-color:#A4A4A4;
 }
 
 #but6
 {
-	background-color:yellow;
+	background-color:#BE81F7;
 }
 
 #but7
 {
-	background-color:red;
+	background-color:#F4FA58;
+}
+
+#but8
+{
+	background-color:#FE2E2E;
 }
 
 .item

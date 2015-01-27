@@ -1,7 +1,6 @@
 $(document).ready(function()
 {
 	var i = 0;
-	
 	$("#but1").click(function()
 	{
 		i = i + 1;
@@ -33,8 +32,14 @@ $(document).ready(function()
 		var rad = prompt("Définissez le radius à adopter :");
 		$("#bloc"+setrad).css("border-radius", rad + "px");
 	});
-	
+
 	$("#but6").click(function()
+	{
+		var setnum = prompt("Entrez le numéro du bloc à déplacer :");
+		i = setnum;
+	});
+	
+	$("#but7").click(function()
 	{
 		var modblock = prompt("Entrez le numéro du bloc à modifier :");
 		var modhaut = prompt("Entrez la hauteur de votre bloc :");
@@ -45,7 +50,7 @@ $(document).ready(function()
 		$("#bloc"+modblock).css("background-color", modcolor);
 	});
 
-	$("#but7").click(function()
+	$("#but8").click(function()
 	{
 		var del = prompt("Entre le numéro du bloc à supprimer :");
 		$("#bloc"+del).remove();
@@ -70,9 +75,9 @@ $(document).ready(function()
 			$("#bloc"+i).animate({marginTop:"+=50px"});
 		}
 	}
-	 
+ 
 	$(function()
 	{
 		$(document).keydown(traitement);
-	});
+	});	
 });
